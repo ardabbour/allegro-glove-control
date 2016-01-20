@@ -11,12 +11,10 @@ Contents
 
 * **allegro_hand_common:** Contains files common to multiple Allegro Hand controllers like CAN communication code.
 
-* **allegro_hand_controllers:** Contains example controllers.
+* **allegro_hand_controllers:** Contains the PD controller.
     * PD Joint Space control
-    * Velocity Saturation Joint Space Control
-    * Grasping Library Interface
 
-* **allegro_hand_keyboard:** Contains code for the keyboard node used to command different grasps.
+* **allegro_hand_keyboard:** Contains to display information.
 
 * **allegro_hand_description:** Contains the robot description URDF for the Allegro Hand. Currently only the right hand is complete.
  
@@ -43,12 +41,7 @@ Launchers
       
   * **VIZ:=** (Enable vizualization)
     * false
-    * true (default) 
-
-  * **CONT:=** (Specify the controller)
-    * grasp
-    * pd (default)
-    * velSat
+    * true (default)
 
   * **POLL:=** (Specify if CAN communication is done by polling)
     * true (default)
@@ -64,5 +57,5 @@ Launchers
 
 **Examples:**<br>
 roslaunch allegro_hand.launch<br>
-roslaunch allegro_hand.launch CONT:=grasp HAND:=left VIZ:=false POLL:=false<br>
+roslaunch allegro_hand.launch HAND:=left VIZ:=false POLL:=false<br>
 roslaunch allegro_hand_virtual.launch
