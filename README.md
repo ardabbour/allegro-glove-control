@@ -20,8 +20,7 @@ Contents
  
 * **parameters:**
  * **gains_pd.:** Contains PD gains used in allegro_hand_core_pd.
- * **gains_velSat:** Contains PD gains and velocity limits used in allegro_hand_core_velSat
- * **initial_position:** Contains the initial position for the joints to got to when joint space controllers like *pd* and *velSat* are used. By default, this is the Allegro Hand *Home position*.
+ * **initial_position:** Contains the initial position for the joints to got to when joint space controllers like *pd* are used. By default, this is the Allegro Hand *Home position*.
  * **zero:** Offsets and directions for each of the 16 joints (Read in by the CAN communication code) Also includes Allegro Hand info specific to each hand like version number and serial number.
 
 Launchers
